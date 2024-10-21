@@ -37,3 +37,13 @@ https://github.com/user-attachments/assets/96afae50-19a3-479b-ab21-378b21bacb6c
 1. [Scout](https://github.com/Shell4026/LabNightmare-pf/blob/main/Scripts/Entity/Monster/Scout.cs) - 괴물의 머리를 쳐다보면 안 됩니다. Raycast를 통해 머리를 쳐다보면 Hunt 상태가 됩니다.
 2. [Tank](https://github.com/Shell4026/LabNightmare-pf/blob/main/Scripts/Entity/Monster/Tank.cs) - 시각이 없으나 청각에 예민합니다. 위의 충돌 사운드 시스템과 연계 됩니다. aggro 수치가 꽉차면 Hunt 상태가 됩니다.
 3. [Charger](https://github.com/Shell4026/LabNightmare-pf/blob/main/Scripts/Entity/Monster/Charger.cs) - 시야에서 벗어나면 Hunt 상태가 되며, 쳐다보면 멈추고 플레이어를 처음 발견하기 전까지는 맵을 돌아다니며 순찰만 합니다.
+
+> 트리거와 액션
+
+![image](https://github.com/user-attachments/assets/21592afc-0cb0-42e4-b123-bf5b2c59c42d)
+![image](https://github.com/user-attachments/assets/07969cd3-1b8e-4804-a4c5-e961dc87e862)
+
+onAble추상 클래스를 상속 받아 액션을 정의합니다.</br>
+특정 행동을 하면 onAble클래스들에게 신호를 줘 다양한 상황을 유연하게 만들 수 있습니다.</br>
+사진은 EnterTrigger를 이용해 트리거 구간에 들어오면 괴물을 일어나는 액션을 취하게 만드는 과정입니다.
+
